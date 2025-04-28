@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XEO STORE - Simulateur Dropshipping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>XEO STORE</h1>
+      <p id="solde">Solde : 2 340€</p>
+    </header>
+
+    <div class="dashboard">
+      <div class="stats">
+        <p>Visiteurs du jour : <span id="visiteurs">120</span></p>
+        <p>Paniers abandonnés : <span id="paniers-abandonnes">24</span></p>
+        <p>Clients fidèles : <span id="clients-fideles">8</span></p>
+        <p>Commandes du jour : <span id="commandes">15</span></p>
+        <p>Satisfaction clients : <span id="satisfaction">4.6/5</span></p>
+      </div>
+
+      <div class="actions">
+        <button onclick="afficherFournisseur()">Voir Produits</button>
+        <button onclick="gérerPublicité()">Publicité TikTok</button>
+        <button onclick="voirTableauDeBord()">Tableau de bord</button>
+        <button onclick="passerLeTemps()">Passer le temps</button>
+      </div>
+
+      <div class="graphique">
+        <canvas id="graphiqueCashFlow" width="400" height="200"></canvas>
+      </div>
+    </div>
+
+    <footer>
+      <p>Simulateur Dropshipping - XEO STORE</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
